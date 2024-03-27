@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: mongodb
-        image: "image"
+        image: "{{ .Values.statefulset.image }}"
         volumeMounts:
         - name: mongodb
           mountPath: /data/db
